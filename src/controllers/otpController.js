@@ -107,7 +107,7 @@ var transporter = nm.createTransport(
         status: !true,
         message:"email ya otp was not wrong",
     });
-    
+    //match the otp in db
     const diff = v.expiresIn - Date.now()
             if(diff> 0){
                 // not expire
